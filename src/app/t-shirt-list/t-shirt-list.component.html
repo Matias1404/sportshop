@@ -1,0 +1,20 @@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Jugador</th>
+            <th>Numero</th>
+            <th>Equipo</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (tshirt of tshirts; track tshirt.id){ 
+            <tr>
+                <td>{{tshirt.jugador}}</td>
+                <td>{{tshirt.numero}}</td>
+                <td>{{tshirt.equipo}}</td>
+                <td><button type="button" class="btn btn-outline-success btn-sm" (click)="add(tshirt)">Agregar</button></td>
+            </tr>   
+        }
+    </tbody>
+</table>
