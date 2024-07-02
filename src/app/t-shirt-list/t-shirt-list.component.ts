@@ -14,6 +14,7 @@ export class TShirtListComponent {
       numero: 80,
       equipo: "Milan",
       retro: true,
+      stock: true,
     }, 
     {
       id: 2,
@@ -21,6 +22,7 @@ export class TShirtListComponent {
       numero: 10,
       equipo: "Inter Miami",
       retro: false,
+      stock: true,
     },
     {
       id: 3,
@@ -28,6 +30,7 @@ export class TShirtListComponent {
       numero: 10,
       equipo: "Juventus",
       retro: true,
+      stock: true,
     },
     {
       id: 4,
@@ -35,6 +38,7 @@ export class TShirtListComponent {
       numero: 14,
       equipo: "Arsenal",
       retro: true,
+      stock: false,
     },
     {
       id: 5,
@@ -42,6 +46,7 @@ export class TShirtListComponent {
       numero: 21,
       equipo: "Roma",
       retro: false,
+      stock: false,
     },
     
   ];

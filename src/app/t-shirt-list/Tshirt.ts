@@ -4,4 +4,5 @@ export interface Tshirt {
     numero: number;
     equipo: string;
     retro: boolean;
+    stock: boolean;
 }
