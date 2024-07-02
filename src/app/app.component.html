@@ -6,8 +6,8 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Contacto</a>
+        <a class="nav-link active" aria-current="page" [routerLink]="['/']">Home</a>
+        <a class="nav-link" [routerLink]="['/contact']">Contacto</a>
       </div>
     </div>
   </div>
@@ -16,12 +16,7 @@
   <h1>{{title}}</h1>
 </div>
 <div class="container">
-  <div class="row">
-    <div class="col-8">
-      <app-t-shirt-list></app-t-shirt-list>
-    </div>
-    <div class="col-4">Carrito</div>
-  </div>
+  <router-outlet></router-outlet>
 </div>
 <div>
   <footer>{{title}} 2024</footer>
