@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Tshirt } from './Tshirt';
+import { TshirtCartService } from '../tshirt-cart.service';
 
 @Component({
   selector: 'app-t-shirt-list',
@@ -14,7 +15,7 @@ export class TShirtListComponent {
       numero: 80,
       equipo: "Milan",
       retro: true,
-      stock: true,
+      stock: 5,
     }, 
     {
       id: 2,
@@ -22,7 +23,7 @@ export class TShirtListComponent {
       numero: 10,
       equipo: "Inter Miami",
       retro: false,
-      stock: true,
+      stock: 3,
     },
     {
       id: 3,
@@ -30,7 +31,7 @@ export class TShirtListComponent {
       numero: 10,
       equipo: "Juventus",
       retro: true,
-      stock: true,
+      stock: 8,
     },
     {
       id: 4,
@@ -38,7 +39,7 @@ export class TShirtListComponent {
       numero: 14,
       equipo: "Arsenal",
       retro: true,
-      stock: false,
+      stock: 0,
     },
     {
       id: 5,
@@ -46,12 +47,15 @@ export class TShirtListComponent {
       numero: 21,
       equipo: "Roma",
       retro: false,
-      stock: false,
+      stock: 0,
     },
     
   ];
 
-  add(tshirt: Tshirt): void{
+  constructor(private cart: TshirtCartService) {}
 
+  add(tshirt: Tshirt): void{
+    this.cart.add(tshirt);
+    tshirt.stock--;
   }
 }

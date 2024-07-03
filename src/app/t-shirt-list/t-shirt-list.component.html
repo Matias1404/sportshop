@@ -15,11 +15,8 @@
                 <td>{{tshirt.numero}}</td>
                 <td>{{tshirt.equipo}}</td>
                 <td class="text-center">
-                    @if(tshirt.stock){
-                        <button type="button" class="btn btn-outline-success btn-sm" (click)="add(tshirt)">Agregar</button>
-                    } @else {
-                        <div class="badge text-bg-primary text-wrap"> Sin stock </div>
-                    }
+                        <button *ngIf="tshirt.stock" type="button" class="btn btn-outline-success btn-sm" (click)="add(tshirt)">Agregar</button>
+                        <div *ngIf="!tshirt.stock" class="badge text-bg-primary text-wrap"> Sin stock </div>
                 </td>
             </tr>   
         }
