@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { TshirtCartService } from '../tshirt-cart.service';
-import { Tshirt } from '../t-shirt-list/Tshirt';
+import { TshirtCartService } from '../../sevices/tshirt-cart.service';
+import { Tshirt } from '../../interfaces/Tshirt';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -16,7 +16,6 @@ export class CartComponent {
   constructor(private cart: TshirtCartService){
     this.cartList$ = cart.cartList.asObservable();
   }
-
 
 }
  

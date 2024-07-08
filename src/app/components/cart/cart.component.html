@@ -1,0 +1,9 @@
+<h3>Carrito</h3>
+<ul class="list-group" >
+    <li *ngFor="let tshirt of (cartList$ | async)" class="list-group-item">
+        <p>{{tshirt.jugador}} - {{tshirt.numero}} - {{tshirt.equipo}} - ${{tshirt.precio}}</p>
+    </li>
+</ul>
+
+
+

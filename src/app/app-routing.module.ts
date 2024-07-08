@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SportshopTshirtsComponent } from './sportshop-tshirts/sportshop-tshirts.component';
-import { SportshopContactComponent } from './sportshop-contact/sportshop-contact.component';
+import { SportshopTshirtsComponent } from './components/sportshop-tshirts/sportshop-tshirts.component';
+import { SportshopContactComponent } from './components/sportshop-contact/sportshop-contact.component';
 
 const routes: Routes = [
   {

@@ -5,6 +5,7 @@
             <th>Jugador</th>
             <th>Numero</th>
             <th>Equipo</th>
+            <th>Precio</th>
             <th></th>
         </tr>
     </thead>
@@ -14,6 +15,7 @@
                 <td>{{tshirt.jugador}}</td>
                 <td>{{tshirt.numero}}</td>
                 <td>{{tshirt.equipo}}</td>
+                <td>${{tshirt.precio}}</td>
                 <td class="text-center">
                         <button *ngIf="tshirt.stock" type="button" class="btn btn-outline-success btn-sm" (click)="add(tshirt)">Agregar</button>
                         <div *ngIf="!tshirt.stock" class="badge text-bg-primary text-wrap"> Sin stock </div>

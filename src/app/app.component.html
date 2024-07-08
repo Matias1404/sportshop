@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">{{title}}</a>
+<nav class="navbar navbar-expand-lg bg-body-tertiary" >
+  <div class="container-fluid text-bg-primary p-3">
+    <a class="navbar-brand fw-bold" href="#">{{title}}</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -12,12 +12,9 @@
     </div>
   </div>
 </nav>
-<div>
-  <h1>{{title}}</h1>
-</div>
 <div class="container">
   <router-outlet></router-outlet>
 </div>
 <div>
-  <footer>{{title}} 2024</footer>
+  <footer class="text-bg-primary p-3">{{title}} 2024</footer>
 </div>

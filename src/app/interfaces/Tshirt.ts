@@ -3,6 +3,6 @@ export interface Tshirt {
     jugador: string;
     numero: number;
     equipo: string;
-    retro: boolean;
     stock: number;
+    precio: number;
 }

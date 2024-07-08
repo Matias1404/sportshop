@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { Tshirt } from './Tshirt';
-import { TshirtCartService } from '../tshirt-cart.service';
-import { TshirtDataService } from '../tshirt-data.service';
+import { Tshirt } from '../../interfaces/Tshirt';
+import { TshirtCartService } from '../../sevices/tshirt-cart.service';
+import { TshirtDataService } from '../../sevices/tshirt-data.service';
 
 @Component({
   selector: 'app-t-shirt-list',
